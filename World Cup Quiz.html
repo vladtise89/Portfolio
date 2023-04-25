@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lato:ital,wght@0,100;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@600;700&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="World Cup Quiz.css" />
+    <title>World Cup Quiz</title>
+  </head>
+  <body>
+    <div class="top container p-3">
+      <div class="row navbar text-align-last: text-center">
+        <div class="col-2 oldtrophy">
+          <div id="old-worldcup-trophy"></div>
+        </div>
+        <div class="col-8">
+          <div class="title-arrangement text-warning mt-0 text-uppercase">
+            <div>
+              w<img src="./img/football football.svg" alt="football" />rld cup
+              quiz
+            </div>
+          </div>
+        </div>
+        <div class="col-2 newtrophy">
+          <div id="new-worldcup-trophy"></div>
+        </div>
+      </div>
+    </div>
+    <div class=" main container d-flex flex-column align-items-center h-100">
+      <div class="container p-2 quiz-body d-flex align-content-around">
+        <div class="top">
+          <div class="status bg-warning m-2 p-2 rounded hide text-white">
+            <span>Question </span>
+            <span id="current-question"></span>
+            <span> out of </span>
+            <span id="total-questions"></span>
+          </div>
+          <div class="correct bg-success m-2 p-2 rounded hide text-white">
+            <p>Correct answers: <span id="correct-answers">0</span></p>
+          </div>
+        </div>
+      </div>
+      
+      <div
+        id="question-container"
+        class="question-container hide p-3 text-dark rounded"
+      >
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="button-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+      </div>
+
+      <div class="container controls">
+        <button
+          id="start-button"
+          class="the-start-btn p-2 m-2 align-text-bottom rounded bg-success text-white"
+        >
+          START
+        </button>
+        <button
+          id="next-button"
+          class="the-next-btn hide rounded bg-danger text-white"
+        >
+          NEXT
+        </button>
+      </div>
+      <h2 class="score hide bg-warning text-white text-center text-uppercase rounded p-2 m-5"></h2>
+      <div class="result "></div>
+      
+        <button id="restart-button" class="the-restart-btn hide rounded bg-primary  p-2 m-5 text-white">RESTART QUIZ</button>
+      </div>  
+      <div
+        class="final hide text-uppercase text-center text-white bg-warning m-3 rounded"
+      >
+        You have completed the quiz!
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="World Cup Quiz.js"></script>
+    <footer>
+      <div
+        class="container bottom d-flex mb-3 bg-dark text-center text-white font-weight-bold rounded"
+      >
+        <div class="col">
+          <a href="index.html">&laquo; Back to homepage</a>
+        </div>
+        <div class="col">
+          Copyright © 2023 Vlad's Page - All Rights Reserved
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

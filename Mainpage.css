@@ -1,0 +1,181 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0px 20px 20px 20px;
+  background-image: url("./img/Football.jpeg");
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.navbar {
+  top: 0;
+  background-color: #00000091;
+}
+img {
+  height: 135px;
+}
+
+.title-arrangement {
+  font-family: "Bungee Spice", cursive;
+  margin: 0px auto;
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 10px;
+  text-shadow: 2px 3px 7px rgb(0 0 0 / 0%), 0 5px 1px rgb(26 25 11);
+}
+.heroes-by-year,
+.quiz-arrangement,
+.heroes-by-match,
+.footballs {
+  height: 350px;
+  width: 250px;
+  margin: 40px auto;
+  border: 3px solid #ddd;
+}
+.title-arrangement img {
+  height: 45px;
+  margin: 0px 0px 5px -5px;
+}
+
+.heroes-by-match {
+  background: url("./img/Heroes\ Ronaldo.jpg") center / cover no-repeat;
+}
+.heroes-by-year {
+  background: url("./img/Heroes\ Italy.jpg") center / cover no-repeat;
+}
+.quiz-arrangement {
+  background: url("./img/Maradona.jpg") center / cover no-repeat;
+}
+.footballs {
+  background: url("./img/footballs\ .jpg") center / cover no-repeat;
+}
+a:link {
+  text-decoration: none !important;
+}
+
+a {
+  color: rgb(251, 0, 0);
+  font-weight: 500;
+  font-size: 22px;
+}
+a:hover {
+  font-weight: 900;
+}
+.heroes-by-match:hover,
+.quiz-arrangement:hover,
+.heroes-by-year:hover,
+.footballs:hover {
+  text-decoration: none;
+  box-shadow: 0 0 10px 2px white;
+  transition: all 300ms ease;
+}
+/* social links */
+.bottom {
+  background-color: #00000091;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 5px;
+}
+
+.fa:hover {
+  box-shadow: white 0px 0px 10px;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-github {
+  background-color: black;
+  color: white;
+}
+.follow-links span {
+  margin-right: 5px;
+}
+
+/* --------MEDIA QUERIES---------- */
+
+@media only screen and (max-width: 768px) {
+  .top {
+    padding: none;
+  }
+  .newtrophy,
+  .oldtrophy {
+    display: none;
+  }
+  .title-arrangement {
+    font-family: "Bungee Spice", cursive;
+    margin: 0px auto;
+    font-size: 15px;
+  }
+  .title-arrangement img {
+    height: 15px;
+    margin: 3px 0px 5px -5px;
+  }
+  .heroes-by-year,
+  .quiz-arrangement,
+  .heroes-by-match,
+  .footballs {
+    height: 240px;
+    width: 150px;
+    border: 3px solid #ddd;
+    box-shadow: 0 0 10px 2px;
+  }
+  a {
+    font-weight: 900;
+    font-size: 14px;
+  }
+  .bottom {
+    font-size: 10px;
+  }
+  .fa {
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .follow-links {
+    display: flex;
+  }
+  .follow-links span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+    align-content: center;
+  }
+  .bottom {
+    margin-top: 10px;
+    bottom: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+    align-content: center;
+  }
+  .bottom {
+    margin-top: 10px;
+    bottom: 5px;
+  }
+}

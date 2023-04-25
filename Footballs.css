@@ -1,0 +1,283 @@
+body {
+  margin: 20px 20px 20px 20px;
+  background-image: url("./img/Goal.jpeg");
+
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+}
+.title-arrangement {
+  font-family: "Bungee Spice", cursive;
+
+  margin: 0px auto;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-shadow: 2px 3px 7px rgb(0, 0, 0), 0 5px 1px rgb(26, 25, 11);
+}
+.title-arrangement img {
+  height: 35px;
+  margin: 0px 0px 5px -5px;
+}
+
+.navbar {
+  background-color: #d11e1ea8;
+  border-radius: 20px;
+  width: 100%;
+}
+.navbar .oldtrophy :first-child {
+  height: 100px;
+  align-items: center;
+}
+.navbar .newtrophy :first-child {
+  height: 100px;
+  align-items: center;
+}
+.title-arrangement img:hover {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.col-3 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.col-6 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 1 0 50%;
+  max-width: 50%;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.arrow {
+  height: 100px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+.right {
+  rotate: 180deg;
+}
+.slider {
+  display: flex;
+  transition: all 1s ease;
+}
+.frame {
+  width: 500px;
+  height: 600px;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+}
+.imgBall {
+  width: 500px;
+
+  object-fit: contain;
+}
+
+.imageSlide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imgDesc {
+  color: white;
+  text-align: justify;
+  font-weight: 600;
+  background-color: #b01a1a9e;
+  padding: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.imgYear {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  background-color: #b01a1a9e;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+/* --------MEDIA QUERIES---------- */
+
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 20px 20px 20px 20px;
+    background-image: url("./img/Goal.jpeg");
+
+    opacity: 1;
+    background-position: left;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+  }
+  .title-arrangement {
+    font-family: "Bungee Spice", cursive;
+
+    margin: 0px auto;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 2px 3px 7px rgb(0, 0, 0), 0 1px 1px rgb(0, 0, 0);
+  }
+
+  .row .newtrophy :first-child {
+    height: 60px;
+    border-radius: 10px;
+  }
+
+  .row .oldtrophy :first-child {
+    height: 55px;
+    align-items: center;
+  }
+
+  .navbar {
+    background-color: #d11e1ea8;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .title-arrangement img {
+    height: 15px;
+    margin: 0px 0px 5px -5px;
+  }
+  .title-arrangement img:hover {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .col-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 1 0 50%;
+    max-width: 50%;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  .left {
+    height: 70px;
+    cursor: pointer;
+    border-radius: 40px;
+    position: absolute;
+    left: 60;
+    left: 65px;
+    z-index: 99;
+  }
+  .right {
+    height: 70px;
+    cursor: pointer;
+    border-radius: 40px;
+    position: absolute;
+    right: 65px;
+    z-index: 99;
+  }
+  .slider {
+    display: flex;
+    transition: all 1s ease;
+  }
+  .frame {
+    width: 500px;
+    height: 600px;
+    overflow: hidden;
+  }
+  .image {
+    width: 100%;
+  }
+  .imgBall {
+    width: 500px;
+
+    object-fit: contain;
+  }
+
+  .imageSlide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgDesc {
+    color: white;
+    text-align: justify;
+    font-weight: 600;
+    background-color: #b01a1a9e;
+    padding: 0px 70px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .imgYear {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    background-color: #b01a1a9e;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 10px;
+  }
+  .bottom {
+    margin-bottom: 50px;
+    font-size: 10px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .bottom {
+    margin-bottom: -50px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
